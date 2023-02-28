@@ -2,14 +2,20 @@
 """ 
     Collects data from users. The data will be username and password
 """
-username = input('Enter your username: ')
-password = input("Enter your password: ")
+def getUserData(mode):
 
-## save these to a dictionary 
-# create a dictionary
-user = {
-    "username": username,
-    "password": password
-}
+    if mode == "Y":
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+        user = {
+            "username": username,
+            "password": password
+        }
+
+        return user
+
+    else:
+        return None
+
 
 
